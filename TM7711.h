@@ -28,7 +28,7 @@ public:
 	int32_t initialize(int mode=TM7711_INPUT_10HZ);
 	int32_t readRaw(int newMode = 0);
 	int32_t readAverage(int numReadings, int newMode = 0);
-	int32_t convertToMV(int32_t rawValue, int32_t Vref = 3300);
+	int32_t convertToMV(int32_t rawValue, int32_t Vref = 5000);
 
 private:
 	// Internal data
@@ -38,3 +38,4 @@ private:
 };
 
 #endif
+
